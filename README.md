@@ -1,6 +1,6 @@
 # Kokyaneko
 
-##Environment
+## Environment
 OS - prefer "Linux"
 editor - "vim"
 langage - "C"
