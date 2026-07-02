@@ -1,3 +1,5 @@
+bindkey -v # Vim modeを有効化
+
 # 日本語環境設定
 export LANG=ja_JP.UTF-8
 export LC_ALL=ja_JP.UTF-8
