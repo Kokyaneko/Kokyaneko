@@ -2,13 +2,13 @@
 
 ## Environment
 
-OS - prefer "Linux"
+OS - prefer *Linux*
 
-editor - "vim"
+editor - *vim*
 
-langage - "C"
+langage - *C*
 
-shell - "zsh"
+shell - *zsh*
 
 ## My information
 
