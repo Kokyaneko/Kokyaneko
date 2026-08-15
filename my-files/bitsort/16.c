@@ -9,7 +9,7 @@ int main (int argc,char *argv[]){
         a = atoi(argv[1]);
     }
 
-    char data[8];
+    char data[16];
     sprintf(data,"%x",a);
 
     printf("%s\n",data);
