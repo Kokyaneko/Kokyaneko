@@ -13,7 +13,7 @@ This program is perfectly free.
 using namespace std;
 
 int main(void){
-    const char *HOME_DIR_PATH = getenv("HOME");//std::getenv <-Get environment variable. 
+    const char *HOME_DIR_PATH = getenv("HOME");//std::getenv <-get environment variable. 
 
     string PERFECT_PATH = string(HOME_DIR_PATH) + "/.github-Aauth.txt";
 
@@ -30,6 +30,12 @@ int main(void){
     fscanf(fp,"%s",trushable);
     fscanf(fp,"%s %s",trushable,uname);
     fscanf(fp,"%s %s",trushable,pass);
+
+    fclose(fp);
+
+    //set environment variable
+    setenv("GITHUB_USER", uname, 1);
+    setenv("GITHUB_TOKEN", pass, 1);
 
     cout<<uname<<endl;
     cout<<pass<<endl;
