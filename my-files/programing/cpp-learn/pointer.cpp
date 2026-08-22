@@ -15,5 +15,8 @@ int main(void){
     p = 3;
     cout<<"a(changed from p): "<< p <<endl;
 
+    int *pp = &p;
+    cout<<"*pp(=p=a): "<< *pp <<endl;
+
     return 0;
 }
