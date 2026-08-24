@@ -16,7 +16,7 @@ int main (void){
     int *pp = new int;
     *pp = 200;
     std::cout<<"*pp=200(new): "<< *pp <<' '<< pp <<std::endl;
-    delete p;
+    delete pp;
 
     return 0;
 }
