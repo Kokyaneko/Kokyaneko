@@ -3,21 +3,25 @@
 using namespace std;
 
 template <class type>//関数の型をtypeに格納
-type waru2(type a){
-    a = a/2;
+type warun(type a,type n){
+    a = a/n;
     return a;
 }
 
 int main(){
-    int n;
-    cout<<"int: ";
+    double n;
+    cout<<"N: ";
     cin>>n;
-    cout<<waru2(n)<<endl;
 
-    double nn;
+    int x;
+    cout<<"int: ";
+    cin>>x;
+    cout<< warun<double>(x,n) <<endl;//引数の型を明示的にdoubleに揃える func<type>(a,b,...)
+
+    double y;
     cout<<"double: ";
-    cin>>nn;
-    cout<<waru2(nn)<<endl;
+    cin>>y;
+    cout<< warun(y,n) <<endl;
 
     return 0;
 }
