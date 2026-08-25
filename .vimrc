@@ -11,21 +11,9 @@ set autoindent      " 改行時に前の行のインデントを継続する
 set wildmenu
 set showcmd
 
-"setting for .md
-function! s:markdown_settings()
-   setlocal textwidth=0
-   setlocal shiftwidth=4
-   setlocal softtabstop=4
-   setlocal expandtab
-   setlocal formatoptions-=ro
-   nnoremap <buffer> <Leader>p :!markdown % > %:r.html && open %:r.html<CR>
-endfunction
+" タグファイルの指定
+set tags=tags;
 
-augroup markdown_settings
-   autocmd!
-   autocmd BufRead,BufNewFile *.md set filetype=markdown
-   autocmd FileType markdown call s:markdown_settings()
-augroup END
 
 " セッションの保存と自動復元
 set sessionoptions=blank,buffers,curdir,folds,help,tabpages,winsize
