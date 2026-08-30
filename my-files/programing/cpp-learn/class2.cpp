@@ -36,11 +36,14 @@ int main (){
     cout<<"Valentine's day: "<<Valentine.mr()<<'/'<<Valentine.dr()<<' '<<Valentine.namer()<<endl;
 
     string get;
-    cout<<"Other Input? (Yes or No):";
+
+    cout<<endl;
+
+    cout<<"Other Input? (Yes or No): ";
     cin >> get;
 
     if(get == "No") return 0;
-    if(get == "Yes"){
+    if((get == "Yes") or (get == "yes") or (get == "y")){
         int m,d;
         string name;
 
@@ -53,7 +56,6 @@ int main (){
 
         cout<<a.namer()<<": "<<a.mr()<<'/'<<a.dr()<<' '<<a.namer()<<endl;
     }
-    cout<<Days.d;
 
     return 0;
 }
