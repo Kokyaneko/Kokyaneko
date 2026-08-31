@@ -9,6 +9,7 @@ private:
     string day_name;
 
 public:
+    //constructer
     Days(int mm,int dd,string day_name_){
         m = mm;
         d = dd;
@@ -23,6 +24,11 @@ public:
         return d;
     }
 
+    int eve(){
+        if(d>1) return d-1;
+        else return -1;
+    }
+
     string namer(){
         return day_name;
     }
@@ -30,10 +36,12 @@ public:
 
 int main (){
     Days Xmas(12,25,"Chrismas/Xmas");
+    Days X_eve = Xmas;//copy constructer
     Days Valentine(02,14,"Valentine's day");
 
-    cout<<"Chrismas: "<<Xmas.mr()<<'/'<<Xmas.dr()<<' '<<Xmas.namer()<<endl;
     cout<<"Valentine's day: "<<Valentine.mr()<<'/'<<Valentine.dr()<<' '<<Valentine.namer()<<endl;
+    cout<<"Chrismas: "<<Xmas.mr()<<'/'<<Xmas.dr()<<' '<<Xmas.namer()<<endl;
+    cout<<"Chrismas eve: "<<X_eve.mr()<<'/'<<X_eve.eve()<<' '<< X_eve.namer() + " eve"<<endl;
 
     string get;
 
