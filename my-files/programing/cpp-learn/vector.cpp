@@ -18,9 +18,17 @@ int main(){
     }
     std::sort(a.begin(),a.end());//昇順でソート
 
+    puts("");
+
     for(int i=0;i<n;i++){
         cout<<"a["<<i<<"]: "<<a[i]<<endl;
     }
+
+    auto maxnum = max_element(a.begin(),a.end());
+
+    puts("");
+
+    cout<<"Max number: "<<*maxnum<<endl;
 
     return 0;
 }
