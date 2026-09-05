@@ -16,18 +16,25 @@ int main(){
         cout<<"Input a["<<i<<"]: ";
         cin>>a[i];
     }
-    std::sort(a.begin(),a.end());//昇順でソート
+
+    vector<int> b = a;//copy vector
+
+    std::sort(a.begin(),a.end(),less<>());//昇順でソート
+    std::sort(b.begin(),b.end(),greater<>());//降順でソート
 
     puts("");
-
+    puts("Greater");
     for(int i=0;i<n;i++){
         cout<<"a["<<i<<"]: "<<a[i]<<endl;
     }
 
+    puts("Less");
+    for(int i=0;i<n;i++){
+        cout<<"b["<<i<<"]: "<<b[i]<<endl;
+    }
+
     auto maxnum = max_element(a.begin(),a.end());
-
     puts("");
-
     cout<<"Max number: "<<*maxnum<<endl;
 
     return 0;
