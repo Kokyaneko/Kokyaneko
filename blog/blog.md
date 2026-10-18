@@ -29,7 +29,7 @@
 * パソコン買いました。もちろんハドフのジャンク。
 
 <div align="center">
-  <img src="ジャンクノートパソコン.png" width="640" alt="ジャンクノートパソコン" />
+  <img src="ジャンクノートパソコン.png" width="480" alt="ジャンクノートパソコン" />
 </div>
 
 ### 韓国の写真
@@ -38,19 +38,19 @@
 
 <table>
   <tr>
-    <td><img src="ソウル駅.png" width="320" alt="ソウル駅" /></td>
-    <td><img src="連結台車.png" width="320" alt="連結台車" /></td>
+    <td><img src="ソウル駅.png" width="240" alt="ソウル駅" /></td>
+    <td><img src="連結台車.png" width="240" alt="連結台車" /></td>
   </tr>
 </table>
 
 <div align="center">
-  <img src="北村韓屋村.png" width="640" alt="北村韓屋村" />
+  <img src="北村韓屋村.png" width="480" alt="北村韓屋村" />
 </div>
 
 * シャッター街…
 
 <div align="center">
-  <img src="龍山電子商街.png" width="640" alt="龍山電子商街" />
+  <img src="龍山電子商街.png" width="480" alt="龍山電子商街" />
 </div>
 
 * ご飯
@@ -59,15 +59,15 @@
 
 <table>
   <tr>
-    <td><img src="とうもろこし.png" width="180" alt="とうもろこし" /></td>
-    <td><img src="チャプチェ.png" width="180" alt="チャプチェ" /></td>
-    <td><img src="焼肉.png" width="180" alt="焼肉" /></td>
-    <td><img src="カンジャンケジャン.png" width="180" alt="カンジャンケジャン" /></td>
+    <td><img src="とうもろこし.png" width="140" alt="とうもろこし" /></td>
+    <td><img src="チャプチェ.png" width="140" alt="チャプチェ" /></td>
+    <td><img src="焼肉.png" width="140" alt="焼肉" /></td>
+    <td><img src="カンジャンケジャン.png" width="140" alt="カンジャンケジャン" /></td>
   </tr>
 </table>
 
 <div align="center">
-  <img src="空港で食べたご飯.png" width="640" alt="空港で食べたご飯" />
+  <img src="空港で食べたご飯.png" width="480" alt="空港で食べたご飯" />
 </div>
 
 ## 2026/07/24
