@@ -1,0 +1,93 @@
+<svg xmlns="http://w3.org" viewBox="0 0 1000 700" width="100%" height="100%">
+  <style>
+    .frame { fill: none; stroke: #f0f0f0; stroke-width: 2; rx: 8; }
+    .board { fill: #e5c090; stroke: #8b5a2b; stroke-width: 2; rx: 6; }
+    .ribbon-red { fill: none; stroke: #d63031; stroke-width: 4; stroke-linecap: round; }
+    .ribbon-blue { fill: none; stroke: #0984e3; stroke-width: 4; stroke-linecap: round; }
+    .center-mass { fill: none; stroke: #2d3436; stroke-width: 2; }
+    .arrow-action { fill: none; stroke: #2d3436; stroke-width: 3; stroke-linecap: round; }
+  </style>
+
+  <defs>
+    <marker id="arrow-head" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#2d3436"/>
+    </marker>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="100%" height="100%" fill="#ffffff"/>
+
+  <!-- ================= STEP 1 ================= -->
+  <g transform="translate(50, 50)">
+    <rect width="260" height="600" class="frame"/>
+    
+    <!-- 紐の配置（右側に通る赤い紐） -->
+    <path d="M 125,50 L 125,550" class="ribbon-red"/>
+
+    <!-- 板の断面（垂直に一列に並ぶ） -->
+    <rect x="100" y="50" width="24" height="120" class="board"/>
+    <rect x="100" y="175" width="24" height="120" class="board"/>
+    <rect x="100" y="300" width="24" height="120" class="board"/>
+    <rect x="100" y="425" width="24" height="120" class="board"/>
+
+    <!-- 重心マーク（一番上の板） -->
+    <circle cx="112" cy="110" r="10" class="center-mass"/>
+
+    <!-- 1番目の板が回転して降りてくる矢印 -->
+    <path d="M 135,110 A 55,55 0 0,1 135,220" class="arrow-action" marker-end="url(#arrow-head)"/>
+    
+    <!-- 次のステップへの進行矢印 -->
+    <path d="M 230,300 L 260,300" class="arrow-action" marker-end="url(#arrow-head)"/>
+  </g>
+
+  <!-- ================= STEP 2 ================= -->
+  <g transform="translate(370, 50)">
+    <rect width="260" height="600" class="frame"/>
+    
+    <!-- 赤い紐と、新しく現れる青い紐の境界線 -->
+    <path d="M 125,175 L 125,550" class="ribbon-red"/>
+    <path d="M 125,50 L 125,175" class="ribbon-blue"/>
+
+    <!-- 板の断面（1番目が2番目の右側に回り込んで重なる） -->
+    <rect x="100" y="175" width="24" height="120" class="board"/> <!-- 2番目の板 -->
+    <rect x="127" y="175" width="24" height="120" class="board"/> <!-- 重なった1番目の板 -->
+    <rect x="100" y="300" width="24" height="120" class="board"/>
+    <rect x="100" y="425" width="24" height="120" class="board"/>
+
+    <!-- 重心マーク（1番目の板が右側に移動） -->
+    <circle cx="139" cy="235" r="10" class="center-mass"/>
+
+    <!-- 2番目の板が左側へ回り込もうとする連鎖の矢印 -->
+    <path d="M 95,235 A 55,55 0 0,0 95,345" class="arrow-action" marker-end="url(#arrow-head)"/>
+    
+    <!-- 重心から紐を越える力を示す矢印 -->
+    <path d="M 139,245 L 121,265" class="arrow-action" marker-end="url(#arrow-head)"/>
+
+    <!-- 次のステップへの進行矢印 -->
+    <path d="M 230,300 L 260,300" class="arrow-action" marker-end="url(#arrow-head)"/>
+  </g>
+
+  <!-- ================= STEP 3 ================= -->
+  <g transform="translate(690, 50)">
+    <rect width="260" height="600" class="frame"/>
+    
+    <!-- 紐の遷移 -->
+    <path d="M 125,300 L 125,550" class="ribbon-red"/>
+    <path d="M 125,50 L 125,300" class="ribbon-blue"/>
+
+    <!-- 板の断面（2番目と1番目が一体となり、3番目の右側に重なる） -->
+    <rect x="127" y="175" width="24" height="120" class="board"/> <!-- 1番目の板 -->
+    <rect x="100" y="300" width="24" height="120" class="board"/> <!-- 3番目の板 -->
+    <rect x="127" y="300" width="24" height="120" class="board"/> <!-- 重なった2番目の板 -->
+    <rect x="100" y="425" width="24" height="120" class="board"/>
+
+    <!-- 重心マーク（2番目の板） -->
+    <circle cx="139" cy="360" r="10" class="center-mass"/>
+
+    <!-- 3番目の板がさらに下へ連鎖していく矢印 -->
+    <path d="M 135,420 A 55,55 0 0,1 135,530" class="arrow-action" marker-end="url(#arrow-head)"/>
+    
+    <!-- 重心がさらに下へ移動する力を示す矢印 -->
+    <path d="M 139,370 L 121,390" class="arrow-action" marker-end="url(#arrow-head)"/>
+  </g>
+</svg>
