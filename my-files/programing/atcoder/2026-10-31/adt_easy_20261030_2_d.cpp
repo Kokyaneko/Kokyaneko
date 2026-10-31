@@ -1,3 +1,6 @@
+//1,2,3について,文字と捉えて,キーがchar型のmapを実装する.
+//1文字だとstring型ではなくchar型にキャストされるため注意する.
+
 #include <iostream>
 #include <string>
 #include <map>
