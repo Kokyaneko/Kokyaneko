@@ -1,0 +1,9 @@
+#include <iostream>
+using namespace std;
+int main(){
+    int a,b,c;
+    cin >> a >> b >> c;
+    if(a==b or b==c or c==a) cout<<"Yes"<<endl;
+    else cout << "No" << endl;
+    return 0;
+}
